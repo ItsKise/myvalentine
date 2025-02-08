@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAGE CANNOT BE FOUND</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #ffebee;
+        }
+        h1 {
+            color: #d32f2f;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        button {
+            font-size: 18px;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+        .yes {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .no {
+            background-color: #d32f2f;
+            color: white;
+        }
+    </style>
+    <script>
+        function showErrors() {
+            alert("Error 401: PLEASE READ\nHey there babe!");
+            alert("Error 403: PLEASE READ\nYou know, Valentine's is coming.");
+            alert("Error 404: PLEASE READ\nI know it's already planned but still I wanna ask you...");
+            alert("Error 500: PLEASE READ\nI just wanna formally invite you to be my official Valentine date!");
+            alert("Error 143: Formal Invitation\nBe my Valentine Date? ❤️💖");
+        }
+
+        // Show popups when the page loads
+        window.onload = function() {
+            showErrors();
+        };
+
+        function openLetter() {
+            // Open a new window for the letter
+            let newWindow = window.open("", "_blank", "width=500,height=600");
+
+            // HTML content for the new window
+            newWindow.document.write(`
+                <html>
+                <head>
+                    <title>My Love Letter 💖</title>
+                    <style>
+                        body {
+                            font-family: 'Arial', sans-serif;
+                            text-align: center;
+                            padding: 50px;
+                            background-color: #ffebee;
+                        }
+                        h1 {
+                            color: #d32f2f;
+                        }
+                        p {
+                            font-size: 18px;
+                            color: #333;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <h1>Dear Babe, 💕</h1>
+                    <p>I've been waiting for this special moment to ask you...</p>
+                    <p>Although we will be spending it late and it's already planned.</p>
+                    <p>It will be a late Valentine date because of our schedule.</p>
+                    <p>Will you still be my Valentine? 🥰</p>
+                    <p>Looking forward to our special day together! 💖</p>
+                    
+                    <audio autoplay loop>
+                    <source src="https://drive.google.com/uc?export=download&id=1kcT5vrE6-9uuVv3mrpjhrc-ekM4GFXS6" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                    </audio>
+
+
+                    <p>💘 With Love, Josh</p>
+                </body>
+                </html>
+            `);
+
+            newWindow.document.close();
+        }
+    </script>
+</head>
+<body>
+    <h1>Be my Valentine Date? 💖</h1>
+    <div class="buttons">
+        <button class="yes" onclick="openLetter()">YES 💕</button>
+        <button class="no" onclick="alert('Aww... 😢 But I will still keep asking until you say yes! 💖')">NO 😢</button>
+    </div>
+</body>
+</html>
